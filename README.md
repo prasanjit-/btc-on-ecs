@@ -12,22 +12,22 @@ The purpose is to create containerized version of Bitcoin from https://bitcoinco
 
 _Jargon for the uninitiated:_
 
-_Bitcoin_
+* _Bitcoin_
 Bitcoin is a network consisting of many members, called nodes, who follow the Bitcoin protocol and enforce its rules.
 
 Bitcoin is also the software that each node runs in order to participate in the network. The main version of this software is called Bitcoin Core, and it powers almost all of the nodes on the Bitcoin network, allowing them to enforce the same ruleset and achieve consensus. You can check out the Bitcoin Core website at bitcoin.org.
 
-_Bitcoin Core_
+* _Bitcoin Core_
 Bitcoin Core is simply open source code. This means that anyone is able to view, comment, or propose changes to the code. Furthermore, anyone can change their copy of the code as they wish. You can examine the code on GitHub.
 
-_Grype_
+* _Grype_
 Most enterprises focus on runtime container security. However, sometimes the containers themselves have a vulnerability at build time that goes undetected to the untrained eye.
 Containers use layers, and most containers are built from third-party base images that are available on Docker Hub. So, even if your code is secure and robust, you might end up deploying something in production that you shouldn’t have deployed because of a vulnerable base image. Anchore Grype is a container vulnerability scanner that helps you scan your container images for vulnerability using a simple CLI that is easy to install and run. The best part is that you can use this tool within your Jenkins CI/CD pipelines and fail builds that cross a certain vulnerability threshold.
 
-_Jenkinsfile_
+* _Jenkinsfile_
 A Jenkinsfile is a text file that contains the definition of a Jenkins Pipeline and is checked into source control.
 
-_Dockerfile_
+* _Dockerfile_
 A Dockerfile is a text document that contains all the commands a user could call on the command line to assemble an image.
 
 ---
