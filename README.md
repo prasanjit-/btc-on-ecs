@@ -48,9 +48,8 @@ _Jenkins Server, Docker, AWS account credentials._
 
 ---
 
-#.......................................................#
-# Docker Build & Local Execution
-#-------------------------------------------------------#
+
+### Docker Build & Local Execution
 
 * Local Build & Push to DockerHub
 
@@ -88,9 +87,7 @@ bitcoin-core:
 ```
 
 
-#.......................................................#
-# Jenkins Pipeline & Grype Security Checks
-#-------------------------------------------------------#
+### Jenkins Pipeline & Grype Security Checks
 ##### Step 1: Jenkins Setup
 
 We're going to run jenkins in a container to make this fairly self-contained and easily disposable.  This command will run jenkins and bind to the host's docker sock (if you don't know what that means, don't worry about it, it's not important).
